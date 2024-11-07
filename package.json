@@ -1,0 +1,38 @@
+{
+  "name": "damagecalculator",
+  "version": "1.0.0",
+  "description": "Damage calculator for Magic the Gathering combos",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "tsc-watch --onSuccess \"node dist/index.js\"",
+    "doc": "typedoc",
+    "test": "mocha",
+    "coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls && rm -rf nyc_output"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielmarh/DamageCalculator.git"
+  },
+  "keywords": [
+    "MTG",
+    "calculator"
+  ],
+  "author": "Daniel Marhuenda Guillén",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielmarh/DamageCalculator/issues"
+  },
+  "homepage": "https://github.com/danielmarh/DamageCalculator#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.14.0",
+    "eslint": "^9.14.0",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.12.0",
+    "prettier": "^3.3.3",
+    "tsc-watch": "^6.2.0",
+    "typescript-eslint": "^8.13.0"
+  }
+}
